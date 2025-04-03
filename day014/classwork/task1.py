@@ -13,7 +13,7 @@
 # 1,5,3 2 რად დაითვლის 
 # start stop step 
 # for cikli რაღაცისთვის
-# 1ფორ,2,saiteracio cvladis saxeli 3.in operatori 4.tanmimdevruli mnisvneloba  5.:6.range
+# 1ფორ,2,saiteracio cvladis saxeli 3.in operatori 4.tanmimdevruli mnisvneloba iterable 5.:6.range
 # for name in range:(4)
 # print("goa")
 
