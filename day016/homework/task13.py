@@ -7,6 +7,5 @@ while True:
     attempts += 1
     if user_input == pin_code:
         print(attempts)
-        break
     else:
         print("არასწორი PIN კოდი, სცადეთ კიდევ.")
