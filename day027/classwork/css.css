@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+p{
+    color: blue;
+    text-align: left;
+}
+button{
+    border: 1px solid green;
+}
+
+h1 ,h2 
+/* asec seiZleba  an*/
+div,div,p

@@ -1,0 +1,10 @@
+/* 3) interal css-ში 1 წესის საშვალებით გასტილეთ 2 h1 და h2 ვებგვერდზე, ასევე მეორე წესის საშვალებით გასტილეთ div-ში არსებული ყველა პარაგრაფი, მინმიუმ მიანიჭეთ color და background-color შეეცადეთ გამოიყენოთ ყველა კუთვნილება */
+
+div,div h2{
+    color: blue;
+    background-color: brown;
+}
+div,h1{
+        color: blue;
+    background-color: brown;
+}
