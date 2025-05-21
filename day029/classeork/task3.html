@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS  COMMENT */
+        h1 {
+            color: red;
+            color: blue;
+        }
+
+        /* p {
+        color: yellow;
+        background-color: black;
+        text-align: center;
+        } */
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        div {
+            color: green;
+            background-color: skyblue;
+
+            text-decoration: underline;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 200;
+            font-family: "sans-serif", Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: blue;
+        }
+
+        /* button {
+            background-color: blue;
+        } */
+
+        /* button ღილაკის თეგი არის შთამომავალი სელექტორი */
+
+        
+        div button {
+            background-color: green;
+        }
+
+        p b {
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is heading</h1>
+
+
+    <!-- CSS-ს ახასიათებს მემკვიდრეობითობის თვისება: მშობელი ელემენტის თვისებები (CSS Declartion) ავტომატურად გადაეცემა შვილ ელემენტებს. ოღონდ არა ყველა კუთვნილება (მაგალითად: padding, margin) -->
+
+    <!-- გარეთა ელემენტს (p) ვუწოდებთ მშობელს (parent) ელემენტს, ხოლო შიდა ელემენტს (ებს) ვუწოდებთ შვილ ელემენტს (child) -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quis debitis eligendi, voluptate, adipisci reprehenderit <i>provident nihil amet earum accusamus</i> ullam eos totam laboriosam pariatur. Iste cum ex quisquam quasi?</p>
+    <button>Just a button</button>
+    <div>
+        <h2>Section</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi possimus, architecto voluptatibus maiores reiciendis quaerat incidunt obcaecati cupiditate. Incidunt recusandae non ab corrupti sapiente harum voluptas fugit quas illum itaque.</p>
+        <button>Button in div</button>
+    </div>
+    <p>This is <b>nesting</b> css <b>example</b></p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 3) შექმენით 3 div ვებგვერდზე, თითოეულში უნდა იყოს: სათაური, პარაგაფი, ღილაკი და სურათი. თქვენთის სასურველი 3 ელემენტი გასტილეთ დამოუკიდებლად (ისე რომ კონკრეტულად ეს ელემენტი გაისტილოს) გამოიყენეთ id და CSS დაწერეთ Internal ტექნიკით -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #1 {
+            color: red;
+            font-size: 30px;
+            text-align: center;
+        }
+        #2 {
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+        }
+        #3 {
+            color: green;
+            font-size: 20px;
+            text-align: center;
+        }
+        #4 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div><h1 id="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nesciunt laboriosam minus possimus sit accusantium nisi unde officiis nemo iure eligendi vero maxime eveniet non voluptates? Quae labore provident maxime.</h1>
+    <button id="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus praesentium aliquam voluptatibus est, ea ipsam quasi, consequuntur eveniet, aperiam nobis enim fuga adipisci libero rerum ratione officia! Laudantium, minus iusto.</button>
+    </div>
+    <div><p id="3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, illo, rem suscipit quos dignissimos dicta tenetur quae numquam atque repellendus beatae est ad quod earum ullam architecto cum culpa? Quos.
+    </p></div>
+    <div>
+        <img src="lokhc.png" id="4" alt="">
+    </div>
+</body>
+</html>
