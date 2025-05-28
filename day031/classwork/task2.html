@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* საიტის დასახელება, მთავარი ემბლემა */
+        #intro {
+            background-color: purple;
+        }
+
+        /* selecor-ში არჩეული მაქვს თეგი */
+        button {
+            background-color: red;
+        }
+
+        /* selector-ად მაქვს კლასი - ელემენტების ჯგუფი */
+        .group1 {
+            background-color: green;
+        }
+        
+        /* სელექტორში მაქვს id, ვსტილავ ცალკეულ ელემენტს */
+        #btn1 {
+            background-color: blue;
+        }
+
+        /* 
+        CSS პრიოტები 
+        1. Inline
+        2. ID
+        3. Class
+        4. Element
+
+        */
+
+    </style>
+</head>
+<body>
+    <h1 id="intro">Header</h1>
+    <p class="group1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aliquid dolorum sunt odio quia voluptatibus dolore repudiandae, ipsum pariatur aut natus, hic aperiam commodi ex enim ut nisi in laudantium!</p>
+    <button id="btn1" class="group1">Click</button>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dv -->
+<!-- 2) კომენტარებით დაწერეთ CSS-ის სხვადსხვა წესების სელექტორად იგივე ელემენტი როდესაც გვაქვს რომელი სტილი იმარჯვებს, რომელი სელექტორია ყველაზე პრიორიტეტული. მოიყვანეთ ყველა დონის მაგალითი -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        CSS წესების პრიორიტეტი (Specificity):
+        1. Inline სტილი  ყველაზე მაღალი პრიორიტეტი
+        2. ID სელექტორი (#id)
+        3. კლასი (.class), ატრიბუტი 
+        4. ელემენტის თეგი (div, p, button)
+        მაგალითი:
+        <button 
+            id="btn1" 
+            class="group1" 
+            style="background-color: yellow;"
+        >Click</button>
+        button { background-color: red; }         
+        .group1 { background-color: green; }      
+        #btn1 { background-color: blue; }         
+        (HTML-ში) style="background-color: yellow;" 
+        შედეგი: ღილაკი იქნება ყვითელი, რადგან inline სტილი არის უფრო მაღალი პრიორიტეტით.
+    -->
+</body>
+</html>

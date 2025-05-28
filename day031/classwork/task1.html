@@ -1,0 +1,51 @@
+<!-- class iwereba ase =.klasis saxeli -->
+<!-- id is da classis dawera seizleba ertad -->
+<!-- roca gvinda marto erti obieqtis gastilva ramdenime klassidan vwert -->
+<!-- p .klasis saxeli -->
+<!-- es igivea rac div button -->
+ <!-- 1) შექმენით 3 h2-ის ელემენტი, თითოეულის ქვემოთ უნდა იყოს 1 ღილაკი და პარაგრაფი. მხოლოდ მეორე h2-ს მიანიჭეთ წითელი ფერი id-ის გამოყენებით. ხოლო პირველი, მეორე და მესამე სექციები ცალ-ცალკე გასტილეთ class სელექტორის საშვალებით. გამოიყენეთ internal css -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .section1 {
+            background-color: lightblue;
+            padding: 10px;
+        }
+        .section2 {
+            background-color: lightcoral;
+            padding: 10px;
+        }
+        .section3 {
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        #second-h2 {
+            color: red;
+        }
+    </style>
+
+    <div class="section1">
+        <h2>Section 1</h2>
+        <button>Button 1</button>
+        <p>This is the first section.</p>
+    </div>
+
+    <div class="section2">
+        <h2 id="second-h2">Section 2</h2>
+        <button>Button 2</button>
+        <p>This is the second section.</p>
+    </div>
+
+    <div class="section3">
+        <h2>Section 3</h2>
+        <button>Button 3</button>
+        <p>This is the third section.</p>
+    </div>
+</body>
+</html>
