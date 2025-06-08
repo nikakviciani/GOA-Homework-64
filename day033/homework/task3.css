@@ -1,0 +1,18 @@
+/* 4) შექმენით სამი div ელემენტი. თითოეულს მიანიჭეთ განსხვავებული RGB ფერი და სხვადასხვა ზომა (სიგანე და სიმაღლე). გამოიყენეთ background-color და width/height */
+.div1 {
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    height: 100px;
+}
+
+.div2 {
+    background-color: rgb(0, 255, 0);
+    width: 150px;
+    height: 150px;
+}
+
+.div3 {
+    background-color: rgb(0, 0, 255);
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,22 @@
+/* 2) პირველი დავალების მსგავსად შექმენით პარაგრაფები და მიანიჭეთ მათ ფერი hex კოდების საშვალებით */
+#red {
+    color: #C80000;
+}
+#green {
+    color: #006400;
+}
+#blue {
+    color: #000032;
+}
+#yellow {
+    color: #FFFF00;
+}
+#purple {
+    color: #800080;
+}
+#orange {
+    color: #FFA500;
+}
+#pink {
+    color: #FFC0CB;
+}
