@@ -1,0 +1,72 @@
+p {
+    text-decoration: dashed red;
+}
+/* text decoration */
+/* color */
+/* line */
+/* style */
+p {
+    color: blue;
+    text-decoration: line-through;
+    text-decoration-color: green;
+    text-decoration-style: wavy;
+}
+
+/* text-transform ნიშნავს ტექსტის ტრანსფორმაციას */
+/* text-shadow ნიშნავს ტექსტის ჩრდილვას */
+p {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* 2px ნიშნავს ჩრდილის ჰორიზონტალურ და ვერტიკალურ გადაადგილებას */
+/* 4px ნიშნავს ჩრდილის ბუნდოვანებას */
+/* rgba(0, 0, 0, 0.5) ნიშნავს ჩრდილის ფერს და გამჭვირვალობას */
+/* text-indent ნიშნავს ტექსტის ჩასმას */
+
+
+/* h1 {
+    text-shadow: -20px -15px 4px gray;
+}
+
+#p1 {
+    text-transform: capitalize;
+
+
+    color: green;
+    text-decoration: dotted red line-through;
+}
+
+#p2 {
+    text-align: right;
+
+    color: red;
+    text-decoration-line: overline;
+    text-decoration-style: dashed;
+    text-decoration-color: blue;
+}
+
+#p3 {
+    color: blue;
+    text-decoration: wavy green underline;
+}
+
+/* a {
+    color: white;
+    text-decoration: none line-through red;
+} */
+
+/* 
+text-decoration:
+text-decoration-style,
+text-decoration-color,
+text-decoration-line
+
+
+text-transform - კუთვნილება გამოიყენება ტექსტის კაპიტალიზაციის სამართავად
+აქვს მნიშვნელობები: lowercase - ყველა სიმბოლოს აპატარავებს
+uppercase - ყველა სიმბოლოს ადიდებს, capitalized - კაპიტალაზიის ფორმაში
+
+text-shadow - კუთვნილება რომლის მეშვეობითაც ვმართავთ ტექტის ჩრდილს
+მას გადაეცემა 4 მნიშვნელობა: ჰორზიონტალური მდებარეობა (px), ვერტიკალური მდებარეობა (px), დაბრუვა, ჩრდილის ფერი
+მდებარეობა არის ორიგინალური ტექსტის მდებარეობიდან გადახრა
+*/ 
