@@ -1,0 +1,36 @@
+<!-- 3) External CSS-ში @import url()-ის გამოყენებით დააიმპორტეთ Google Fonts-იდან მოძიებული თქვენთვის სასურველი 3 ფონტი. აიღეთ 3 პარაგრაფი თითოეული გასნხვავებული id-ით და მიანიჭეთ ეს ფონტები font-family კუთვნილების გამოყენებით, ასევე აიღეთ 1 სათადარიგო generic ფონტი -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+        p {
+            margin: 20px 0;
+        }
+
+        #font1 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #font2 {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #font3 {
+            font-family: 'Lora', serif;
+        }
+    </style>
+</head>
+<body>
+    <p id="font1">Roboto</p>
+    <p id="font2">Open Sans</p>
+    <p id="font3">Lora</p>
+
+</body>
+</html>
