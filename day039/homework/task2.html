@@ -1,0 +1,36 @@
+<!-- 3) შექმენით ლინკების სია რომელშიც თითო ლინკი გადაჰყავს სხვადასხვა საიტზე (მაგ: sololearn, wikipedia, w3schools). თითოეულ ლინკს შეუცვალეთ ფერი და კიდევ ორი სტილი (მაგ: background-color, text-decoration) ოთხივე მდგომარეობაში: :link, :visited, :hover, :active. გამოიყენეთ კლასები და კომენტარებით დაუწერეთ რა მდგომარეობას წარმოადგენს თითოეული pseudo-class -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:active{
+            color: red; /* ტექსტის ფერი მასზე დაჭერის მერე */
+            background-color: yellow; /* ფონდის ფერი */
+            text-decoration: none; /* ხაზგასმა */
+        }
+        a:visited {
+            color: purple; /* ტექსტის ფერი უკვე ნანახი ლინკისთვის */
+            background-color: lightgray; /* ფონდის ფერი */
+            text-decoration: none; /* ხაზგასმა */
+        }
+        a:hover {
+            color: blue; /* ტექსტის ფერი */
+            background-color: lightblue; /* ფონდის ფერი */
+            text-decoration: underline; /* ხაზგასმა */
+        }
+        a:link {
+            color: green; /* ტექსტის ფერი ლინკისთვის */
+            background-color: white; /* ფონდის ფერი */
+            text-decoration: none; /* ხაზგასმა */
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.sololearn.com">sololearn</a>
+    <a href="https://www.wikipedia.org">wikipedia</a>
+    <a href="https://www.w3schools.com">w3schools</a>
+</body>
+</html>

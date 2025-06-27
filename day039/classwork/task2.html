@@ -1,0 +1,107 @@
+<!-- a {
+    color: pink;
+}
+
+#a:hover {
+    color: red;
+    font-size: large;
+    text-decoration: dotted overline #C50000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+a:active {
+    text-shadow: 4px 5px 4px #C50000;
+}
+
+a:link {
+    color: brown;
+}
+
+a:visited {
+    color: blue;
+}
+
+
+/* 
+state - მდგომარეობა
+hover - მდგომარეობა როდესაც მომხმარებლა კურსორი მიიტანა ელემენტზე
+
+რომ შევცვალოთ ელემენტის სტილი კონკრეტული მდგომარეობისას ვიყენებთ pseudo-class
+
+ფსევდო სელექტორი არის მდგომარეობის აღმწერი სელექტორი როგორიცაა ელემენტზე კურსორის მიტანა,
+დაჭერა და ა.შ
+
+რომ შევცვალოთ ფსევუდო კლასის დიზანი ამისთვის
+1. ვირჩევთ ელემენტს მარტივი სელექტორი (თეგის სახელით, id, class) 
+2. ვწერთ ორწერტილს (:)
+3. ვწერთ pseudo class (მაგ: hover, active, link, visited)
+4. ჩვეულებრივად აგრძლებთ CSS-ის დეკლარაციების წერას
+*/
+
+
+/* 
+:link - pseudo class, რომელიც იქამდეა აქტიური სანამ მომხარებელი პირველად გადავა ბმულზე
+*/ -->
+
+
+
+
+<!-- 2) შექმენით ცხრილი რომელსაც ექნება მინიმუმ 3 რიგი და სვეტი, ცხრილი გასტილეთ border კუთვნილების მეშვეობით, ასევე გასტილეთ ცხრილის მონაცემები (th, td) border-ის მეშვეობით, ცხრილის შუა სვეტი გასტილეთ სხვა ფერით (td:nth-child(2) საბოლლოდ ეს ცხრილი მეორედ დააკოპირეთ მეორე ცხრილს მიანიჭეთ border-collapse: collapse; დეკლარაცია. კომენატებით დაწერეთ border კუთვნილების ქვე კუთვნილებები -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>სახელი</th>
+            <th>ასაკი</th>
+            <th>ქალაქი</th>
+        </tr>
+        <tr>
+            <td>ანა</td>
+            <td>22</td>
+            <td>თბილისი</td>
+        </tr>
+        <tr>
+            <td>გიორგი</td>
+            <td>25</td>
+            <td>ბათუმი</td>
+        </tr>
+        <tr>
+            <td>მარიამი</td>
+            <td>19</td>
+            <td>ქუთაისი</td>
+        </tr>
+        </table>
+        <br>
+        <table border="1">
+        <tr>
+            <th>სახელი</th>
+            <th>ასაკი</th>
+            <th>ქალაქი</th>
+        </tr>
+        <tr>
+            <td>ანა</td>
+            <td>22</td>
+            <td>თბილისი</td>
+        </tr>
+        <tr>
+            <td>გიორგი</td>
+            <td>25</td>
+            <td>ბათუმი</td>
+        </tr>
+        <tr>
+            <td>მარიამი</td>
+            <td>19</td>
+            <td>ქუთაისი</td>
+        </tr>
+
+    </table>
+</body>
+</html>

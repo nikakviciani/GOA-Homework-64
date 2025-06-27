@@ -1,0 +1,24 @@
+<!-- 2) შექმენით ნავიგაცია რომელშიც იქნება 3 ბმული, თითოეულს pseudo class-ის გამოყენებით შეუჩვალეთ hover და active მდოგმარეობებისას ტექსტის ფერი და დამატებით 2 კუთვნილება. კომენტარებით თუ რა არის pseudo class და მდგომარეობა (state)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:hover {
+            color: blue; /* ტექსტის ფერი */
+            text-decoration: underline; /* ხაზგასმა */
+        }
+        a:active{
+            color: red; /* ტექსტის ფერი მასზე დაჭერის მერე*/
+        }
+    </style>
+</head>
+<body>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <!-- pseudo class არის CSS-ის სპეციალური კლასები, რომლებიც აღწერენ ელემენტის მდგომარეობას (state), როგორიცაა :hover, :active-->
+</body>
+</html>

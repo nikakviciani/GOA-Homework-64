@@ -1,0 +1,68 @@
+<!-- 4) შექმენით ცხრილი რომელშიც იქნება სტუდენტების სია, თითოეულს ექნება სახელი, საგანი და ქულა. ცხრილის მეორე სვეტს (საგანს) ცალკე სტილი მიანიჭეთ td:nth-child(2) სელექტორით (მაგ: სხვა ფერი ან ფონური ფერი). მთლიან ცხრილზე და td/th-ებზე გამოიყენეთ border კუთვნილება, ხოლო ცხრილის ბოლოს დააკოპირეთ ის და მეორე ვერსიას მიუმატეთ border-collapse: collapse; კომენატარებში დაწერეთ რა განსხვავებაა ორი ცხრილის გარეგნობაში -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        td:nth-child(2) {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px">
+        <tr>
+            <th>სახელი</th>
+            <th>საგანი</th>
+            <th>ქულა</th>
+        </tr>
+        <tr>
+            <td>მარიამი</td>
+            <td>მათემატიკა</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>გიორგი</td>
+            <td>ფიზიკა</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>ნინო</td>
+            <td>ქიმია</td>
+            <td>95</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>სახელი</th>
+            <th>საგანი</th>
+            <th>ქულა</th>
+        </tr>
+        <tr>
+            <td>მარიამი</td>
+            <td>მათემატიკა</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>გიორგი</td>
+            <td>ფიზიკა</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>ნინო</td>
+            <td>ქიმია</td>
+            <td>95</td>
+        </tr>
+    </table>    
+</body>
+</html>
