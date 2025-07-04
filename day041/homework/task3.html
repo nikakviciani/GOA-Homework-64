@@ -1,0 +1,32 @@
+<!-- 4) შექმენით რეგისტრაციის ფორმა, სადაც იქნება 'სახელი', 'გვარი', 'ელფოსტა' და 'პაროლი' ველები. მიანიჭეთ ყველა input[type=text] და input[type=password] ელემენტს border-radius: 8px; border: 2px solid gray; ღილაკს მიანიჭეთ background-color: green; color: white; font-weight: bold; გამოიყენეთ button:hover რათა მაუსის გადატარებისას ფერი გახდეს darkgreen -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            input[type="text"], input[type="password"] {
+                border-radius: 8px;
+                border: 2px solid gray;
+            }
+        }
+        button{
+            background-color: green; color: white; font-weight: bold;
+        }
+        button:hover {
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <input type="text">
+    <input type="email">
+    <input type="password">
+    <button></button>
+</body>
+</html>
