@@ -1,0 +1,24 @@
+/* div{
+    background-color: lightblue;
+    border-radius: 15% 10% 20% 5%;
+/* pirveli zida marcxena kutxe ,meore zeda marjvena,mesame qveda marcxena,meotxe qveda markvna */
+
+/* 1) შექმენით 2 div, box1 და box2 მიანიჭეთ მათ შესაბამისი id, შემდეგ მიანიჭეთ width, ორივე ელემენტს, ასევე backgroundcolor და border კუთვნილებები. შემდეგ პირველ box1-ს გაუწერეთ 15px padding და 40px margin, ხოლო მეორე box-ს გაუწერეთ 10px padding და 30px margin. შემდეგ კომენტარებით დაწერეთ რა არის padding და margin კუთვნილებები და ზოგადად CSS Box Model
+ */
+
+#box1 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    padding: 15px;
+    margin: 40px;
+}
+#box2 {
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            border: 2px solid green;
+            padding: 10px;
+            margin: 30px;
+        }
