@@ -1,0 +1,33 @@
+<!-- 1) შექმენით 1 container დივი, რომელშიც შექმნით 5 .box კლასის მქონე div-ს, შემდეგ ეს .box კალსის მქონე დივები განალაგეთ flexbox-ად. შემდეგ მათ შორის აიღეთ 30px დაშორება, flex-ის მიმართულება უნდა იყოს row, ელემენტები ჰოროზონტალურად განალგეთ flex-end-ზე, ხოლო ვერტიკალურად განალაგეთ ცენტრში, ასევე ისინი თუ ვერ დაეტევიან კონკრერტულ რიგში, გაუწერეთ flex-wrap რომ შეძლონ შემდეგ რიგებზე გადასვლა. ასევე თუ მოწყობლიობის ზომა მცირეა და ელემენტები ვერ ეტევიან რიგზე, მაშინ მათი ზომა შემცირდეს 1-ით, ხოლო თუ შესაძებლია რომ გაიზარდონ ყველა div-ი გარდა პირველისა გაიზრდოს 1-ის კოეფციენტით ხოლო პირველი გაიზარდოს 2-ით -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            gap: row;
+            align-items: end;
+            flex-direction: row;
+            gap: 30px;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .box{
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
