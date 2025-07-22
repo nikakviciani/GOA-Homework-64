@@ -1,0 +1,31 @@
+<!-- """```2) კომენტარებით ახსენით რა არის flexbox-layout და მისი ქვე კუთვნილებები: flex-direction, justify-content, align-items, flex-wrap, flex-grow, flex-shrink. დაწერეთ თუ რას აკეთებს justify-content ქვე-კუთვნილების მნიშვენლობები: space-between, space-around, space-evenly. ასევე ახსენით რა არის Main (მთავარი) და Cross (გადამკვეთი) ღერძები```
+```3) შექმენით ერთი div ID-ით container, რომელიც იქნება Flexbox კონტეინერი. მასში ჩასვით 5 ელემენტი (მაგალითად div კლასით box) და თითოეულზე გამოიყენეთ სხვადასხვა ფერის ფონი. container-ზე გამოიყენეთ Flexbox-ის შემდეგი თვისებები: flex-direction, justify-content, align-items, flex-wrap, ხოლო box-ებზე – flex-grow და flex-shrink. ყოველი თვისება ცალ-ცალკე სცადეთ სხვადასხვა მნიშვნელობებით და დააკვირდით, როგორ მოქმედებს განლაგებაზე```
+- შექმენით div ID-ით container
+- container-ში ჩასვით 5 ელემენტი div კლასით box
+- box ელემენტებს მიანიჭეთ მინიმუმ 100px სიგანე და სიმაღლე და სხვადასხვა background-color
+- container-ზე დაწერეთ:
+    - display: flex;
+    - flex-direction: row / column / row-reverse / column-reverse
+    - justify-content: flex-start / flex-end / center / space-between / space-around / space-evenly
+    - align-items: flex-start / flex-end / center / stretch / baseline
+    - flex-wrap: nowrap / wrap / wrap-reverse
+- თითო box-ზე ცალ-ცალკე სცადეთ:
+    - flex-grow: 1 ან განსხვავებული მნიშვნელობები
+    - flex-shrink: 0 ან განსხვავებული მნიშვნელობები
+""" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+        
+        <div class="box" style="background-color: red; width: 100px; height: 100px; flex-grow: 1; flex-shrink: 0;"></div>
+        <div class="box" style="background-color: green; width: 100px; height: 100px; flex-grow: 1; flex-shrink: 0;"></div>
+        <div class="box" style="background-color: blue; width: 100px; height: 100px; flex-grow: 1; flex-shrink: 0;"></div>
+
+</body>
+</html>
