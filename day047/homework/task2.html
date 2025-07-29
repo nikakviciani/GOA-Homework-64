@@ -1,0 +1,56 @@
+<!-- 3) შექმენით საიტი თქვენთვის სასურველ თემატიკაზე, გამოიყენეთ ყველაფერი რაც css-ში ისწავლეთ, ოთხივე პოზიციის ტიპისა და z-index-ის ჩათვლით -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            margin-top: 60px; 
+            padding: 20px;
+        }
+        .box {
+            position: relative; 
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin-bottom: 20px;
+        }
+        .box.fixed {
+            position: fixed; 
+            top: 20px;
+            right: 20px;
+        }
+        .box.absolute {
+            position: absolute; 
+            bottom: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+    <div class="content">
+        <div class="box">Normal Box</div>
+        <div class="box fixed">Fixed Box</div>
+        <div class="box absolute">Absolute Box</div>
+    </div>
+</body>
+</html>

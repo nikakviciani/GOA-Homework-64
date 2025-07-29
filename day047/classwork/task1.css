@@ -1,0 +1,64 @@
+/* 1) შექმენით flexbox განლაგება, რომელშიც იქნება 3 შვილი ელემენტი, basic styles (box-model, colors, flexbox), შემდეგ გამოიყეენთ position კუთვნილება, პირველ ელემნტს გაუწერეთ relative, მეორეს absoulute , მესამეს fixed. ასევე შეცვალეთ თითოეულის მდებოარეობა top, bottom, left, right კუთვნილებებით, კომენტარებით ახსენითთ თითოეული პოზციის ვარიანტი. შეეცადეთ გააკეთოთ ლამაზი დიზანიც მაგალითში */
+.cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.child1{
+    background-color: #ff6347; 
+    padding: 20px;
+    border: 2px solid #000;
+    position: relative; 
+    top: 20px; 
+}
+.child2{
+    background-color: #4682b4;
+    padding: 20px;
+    border: 2px solid #000;
+    position: absolute; 
+    top: 50px; 
+    left: 50px; 
+}
+.child3{
+    background-color: #32cd32;
+    padding: 20px;
+    border: 2px solid #000;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px;
+}
+.child4{
+    background-color: #ffa500;
+    padding: 20px;
+    border: 2px solid #000;
+    position: absolute; 
+    top: 100px; 
+    left: 100px;
+}
+.child5{
+    background-color: #8a2be2;
+    padding: 20px;
+    border: 2px solid #000;
+    position: sticky; 
+    top: 0;
+}
+.child6{
+    background-color: #fffacd;
+    padding: 20px;
+    border: 2px solid #000;
+    position: static;
+}
+/* პოზიცია არის ხუთნაირი,absolute,fixed,relative,static,stycky  */
+/* და 4 მიმართულება top ,buttom,left,right */
+/* 
+    Documentation: 
+    ეს ფაილი შეიცავს CSS სტილებს, რომლებიც განსაზღვრავს ელემენტების პოზიციონირების თვისებებს.
+    პოზიციის მნიშვნელობები:
+        - static: ელემენტი განთავსებულია დოკუმენტის ნაკადში ნაგულისხმევად.
+        - relative: ელემენტი განთავსებულია ნაგულისხმევ პოზიციაზე, მაგრამ შეიძლება გადაადგილდეს top/right/bottom/left მახასიათებლებით.
+        - absolute: ელემენტი განთავსებულია უახლოესი პოზიციონირებული მშობლის მიმართ.
+        - fixed: ელემენტი განთავსებულია ფანჯრის მიმართ და არ გადაადგილდება გვერდის გადახვევისას.
+        - sticky: ელემენტი მოქცეულია ნორმალურ ნაკადში, მაგრამ გადადის fixed პოზიციაზე, როდესაც მიაღწევს მითითებულ პოზიციას გადახვევისას.
+*/

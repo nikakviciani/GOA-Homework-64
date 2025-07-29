@@ -1,0 +1,57 @@
+<!-- 4) შექმენით ვებგვერდი, სადაც გამოყენებული იქნება CSS პოზიციონირების ოთხივე ტიპი: static, relative, absolute და fixed. გვერდის ზედა ნაწილში განათავსეთ ფიქსირებული ჰედერი (fixed), რომელშიც ეწერება „ჩემი პროფილი“ და რომელიც დარჩება ეკრანზე გადახვევის დროს. ჰედერის ქვემოთ შექმენით პროფილის ბლოკი (relative), სადაც იქნება ფოტო, სახელი და აღწერა. ამ ბლოკის შიგნით ფოტოს მარჯვენა ზედა კუთხეში დაამატეთ მესიჯის ლოგო (absolute) შეტყობინებების რიცხვით (მაგალითად, 3). ბოლოს დაამატეთ ჩვეულებრივი ტექსტის აბზაცი (static), რომელიც გვერდზე დარჩება ჩვეულებრივ დოკუმენტის ნაკადში. თითოეულ ბლოკს გამოიყენეთ განსხვავებული ფერი და ზომები, რათა პოზიციონირების ეფექტები თვალსაჩინო იყოს -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .profile {
+            position: relative;
+            margin-top: 60px;
+            padding: 20px;
+            background-color: lightblue;
+        }
+        .message-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+        }
+        .static-text {
+            padding: 20px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ჩემი პროფილი</h1>
+    </header>
+    <div class="profile">
+        <img src="profile.jpg" alt="Profile Picture" style="width:100px;height:100px;">
+        <h2>სახელი: გიორგი</h2>
+        <p>აღწერა: ეს არის ჩემი პროფილი.</p>
+        <div class="message-icon">3</div>
+    </div>
+    <div class="static-text">
+        <p>ეს არის ჩვეულებრივი ტექსტის აბზაცი.</p>
+    </div>
+</body>
+</html>
