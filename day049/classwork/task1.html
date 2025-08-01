@@ -1,0 +1,62 @@
+<!-- vh = % -->
+<!-- liniar gradient ferebis fadasvla ertidan meoresi -->
+ <style>
+    .example {
+        height: 100vh;
+        background: linear-gradient(to right, red, blue);
+    }
+</style>
+<!-- background image, background-repeat, background-size, background-position -->
+<!-- background cover ნიშნავს ფონტის ზომის ავტომატურად მორგებას -->
+<!-- background-position ნიშნავს ფონტის პოზიციის განსაზღვრას -->
+<!-- background-repeat ნიშნავს ფონტის გამეორებას -->
+<!-- background-attachment ნიშნავს ფონტის მიმაგრებას -->
+<!-- background-origin ნიშნავს ფონტის წარმოშობის ადგილის განსაზღვრას -->
+<!-- background-clip ნიშნავს ფონტის კლიპირების წესების განსაზღვრას -->
+
+
+
+
+
+
+
+
+
+<!-- ) შექმენით container div, რომელსაც გაუწერეთ თადავაპირველ ზომებს, borders და background კუთვნილებებს. კომენტარებით ახსენით background-size-ის მნიშვნლობები contain და cover
+
+background-color
+background-image
+background-size
+background-position
+background-attachment -->
+<!-- background-size ნიშნავს ფონტის ზომის ავტომატურად მორგებას -->
+<!-- background cover ნიშნავს ფონტის ზომის ავტომატურად მორგებას -->
+<!-- background-position ნიშნავს ფონტის პოზიციის განსაზღვრას -->
+<!-- background-repeat ნიშნავს ფონტის გამეორებას -->
+<!-- background-attachment ნიშნავს ფონტის მიმაგრებას -->
+<!-- background-origin ნიშნავს ფონტის წარმოშობის ადგილის განსაზღვრას -->
+<!-- background-clip ნიშნავს ფონტის კლიპირების წესების განსაზღვრას -->
+<!-- background-contain ნიშნავს ფონტის ზომის ავტომატურად მორგებას -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-image: url('https://yandex.ru/images/search?pos=0&img_url=https%3A%2F%2Fcs6.pikabu.ru%2Fpost_img%2Fbig%2F2015%2F06%2F08%2F3%2F1433735650_472905306.jpg&text=image&lr=10777&source=serp&rpt=simage');
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-origin: content-box;
+            background-clip: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>
