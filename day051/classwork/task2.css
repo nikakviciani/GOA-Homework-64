@@ -1,0 +1,127 @@
+/* 2) შექმენით div, რომელსაც მიანიჭებთ თავდაპირველ სტილს (გაცენტრავთ, ფონის-ფერი, ზომები, საზღვარი) შემდეგ hover და active მდგომარეობებისას შეცვალეთ ელემენტი transform-ის ყველა თვისებით, ფონის ფერით და კიდევ თქვენთვის სასურველი კუთვნილებებით. შემდეგ transition კუთვნიელბის გამოყენებით ეს გადასვლა გახადეთ smooth ამისათვის გამოიყენეთ: (ყველა ეს კუთვნილება ახსენით კომენტარებით
+
+transition-property
+transition-duration
+transition-delay (optional - თუ გინდათ)
+transition-timing-function */
+
+/* transition იყოფა რამდენიმე ნაწილად */
+/* transition-property:  რომელ თვისებას ვცვლით იზომება  */
+/* transition-duration:  რამდენ ხანს გაგრძელდება ტრანსფორმაცია იზომება წამებში (s) ან მილიწამებში (ms) */
+/* transition-timing-function:  როგორ უნდა მიმდინარეობდეს ტრანსფორმაცია  */
+/* transition-delay:  რამდენ ხანს უნდა დაველოდოთ ტრანსფორმაციის დაწყებას იზომება წამებში (s) ან მილიწამებში (ms) */
+div{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    margin: 50px;
+    text-align: center;
+    transition-property: transform, background-color, border-color; 
+    transition-duration: 1s; 
+    transition-timing-function: ease-in-out; 
+    transition-delay: 0s; 
+}
+div:hover {
+    background-color: lightcoral;
+    border-color: darkblue;
+
+}
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+#container {
+    width: 300px;
+    height: 500px;
+
+    background-color: green;
+    /* border-top: 5px solid red;
+    border-radius: 50%; */
+    /* 
+    translate - ცვლის ელემენტის პოზციას
+    rotate - აბრუნებს ელემენტს
+    scale - ცვლის ელემენტის სიდიდეს
+    */
+
+    /* transform: translate(20px, 80px); */
+    /* transform: rotate(-45deg); */
+    /* transform: scale(1); */
+    /* transform: rotate(0deg); */
+    /* transform: skew(125deg, 120deg); */
+    /* transform-origin: top left; */
+}
+
+/* #container:hover {
+    transform: rotate(45deg);
+} */
+
+/* #container:hover {
+    transform: translate(20px, 30px) rotate(45deg) scale(2) skew(20deg, 45deg);
+}
+
+#container:active {
+    transform: translate(20px, 30px) rotate(45deg) scale(2) skew(20deg, 45deg);
+    background-color: red;
+} */
+
+/* #container {
+    width: 200px;
+    height: 200px;
+
+    background-color: green;
+    transition-property: transform, background-color, opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#container:hover {
+    transform: translate(500px, 300px);
+
+} */
+
+
+#wrapper {
+    width: 1000px;
+    height: 250px;
+
+    border: 10px solid black;
+}
+
+#loadingBar {
+    width: 5%;
+    height: 100%;
+
+    background-color: green;
+    transition: width 1s linear;
+    font-size-adjust: 4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loadingBar:hover {
+    width: 99%;
+} */
+
+
+
+/* button {
+    transition-property: background-color, color;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
+} */

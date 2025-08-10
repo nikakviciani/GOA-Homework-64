@@ -1,0 +1,32 @@
+/* 1) შექმენით div მიანიჭეთ ზომები, ფერი და საზღვარი. შეგიძლიათ border-radius. hover და active მდგომარეობებისას transform კუთვნილების მეშვეობით გარდაქმენით ელემენტი, გამოიყენეთ ყველა trasnform-ის თვისება: translate, rotate, scale, skew. შეეცადეთ შექმნათ ლამაზი ტრანსფორმაცია */
+/* ტრანსფორმს აქვს რამდენიმე კუთნილება */
+/* translate აკეტებს ელემენტის პოზიციის ცვლილებას */
+/* scale აკეტებს ელემენტის ზომის ცვლილებას */
+/* rotate აკეთებს ელემენტის ბრუნვას */
+/* skew აკეთებს ელემენტის გაწელვას */
+/* დახრა ხდება degrees(deg) */
+/* skewx და skewy */
+/* skewx არის ჰორიზონტალური გაწელვა ,იქს ღერძი*/
+/* skewy არის ვერტიკალური გაწელვა,იგრეკ ღერძი */
+/*  სკეწ არ წელავს ელემენტს ზევით და გვერდით და ამიტომ მისი საზომი ერთეული დიგრი არის */
+/* ჩვენ შეგვიძლია ამ კუთვნილებებს კომბინირება */
+/* მაგალითად */
+/* transform:scale(1.5, 1.5) translate(50px, 50px) rotate(15deg) skew(10deg, 10deg) */
+/* საზომი სისტემები skew:deg,scale:px,rotate:deg,translate:px */
+/* transform-origin:  რომელი კუთხის წინაც იტრიალებს */
+.c {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: scale(1.5, 1.5) translate(50px, 50px) rotate(15deg) skew(10deg, 10deg);
+}
+.c:hover {
+    background-color: blue;
+    transform: scale(1.2, 1.2) translate(20px, 20px) rotate(30deg) skew(5deg, 5deg);
+}
+.c:active {
+    background-color: green;
+    transform: scale(1, 1) translate(0px, 0px) rotate(0deg) skew(0deg, 0deg);
+    border-radius: 50%;
+}
+/* ტრანსფორმაციას ვიყენებთ მარტო მაშინ, როცა გვინდა ელემენტის ვიზუალურად შეცვლა */
