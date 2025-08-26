@@ -1,0 +1,156 @@
+<!-- 5) შექმენით მსგავსი მზის სისტემის სიმულაცია: -->
+<!-- https://webartdevelopers.com/blog/wp-content/uploads/2022/06/css-only-animated-solar-system.gif -->
+<style>
+body {
+    background: #111;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.solar-system {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    margin-top: -40px;
+    background: radial-gradient(circle, #ffe066 60%, #ffb700 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 60px 30px #ffe06688;
+    z-index: 2;
+}
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px dashed #444;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.mercury {
+    width: 14px; height: 14px;
+    background: #b2b2b2;
+    animation: orbit-mercury 2s linear infinite;
+}
+.venus {
+    width: 20px; height: 20px;
+    background: #e6c87a;
+    animation: orbit-venus 3s linear infinite;
+}
+.earth {
+    width: 22px; height: 22px;
+    background: #3a7bd5;
+    box-shadow: 0 0 10px #3a7bd5;
+    animation: orbit-earth 4s linear infinite;
+}
+.mars {
+    width: 18px; height: 18px;
+    background: #c1440e;
+    animation: orbit-mars 5s linear infinite;
+}
+.jupiter {
+    width: 36px; height: 36px;
+    background: #e3b07a;
+    animation: orbit-jupiter 8s linear infinite;
+}
+.saturn {
+    width: 32px; height: 32px;
+    background: #e6d7b2;
+    animation: orbit-saturn 10s linear infinite;
+}
+.saturn::after {
+    content: '';
+    position: absolute;
+    left: -8px; top: 12px;
+    width: 48px; height: 8px;
+    border-radius: 50%;
+    border: 2px solid #d2c295;
+    opacity: 0.7;
+}
+.uranus {
+    width: 24px; height: 24px;
+    background: #b2e6e6;
+    animation: orbit-uranus 12s linear infinite;
+}
+.neptune {
+    width: 22px; height: 22px;
+    background: #4b6cb7;
+    animation: orbit-neptune 14s linear infinite;
+}
+@keyframes orbit-mercury {
+    0% { transform: rotate(0deg) translateX(50px) translateY(-50%) }
+    100% { transform: rotate(360deg) translateX(50px) translateY(-50%) }
+}
+@keyframes orbit-venus {
+    0% { transform: rotate(0deg) translateX(80px) translateY(-50%) }
+    100% { transform: rotate(360deg) translateX(80px) translateY(-50%) }
+}
+@keyframes orbit-earth {
+    0% { transform: rotate(0deg) translateX(110px) translateY(-50%) }
+    100% { transform: rotate(360deg) translateX(110px) translateY(-50%) }
+}
+@keyframes orbit-mars {
+    0% { transform: rotate(0deg) translateX(140px) translateY(-50%) }
+    100% { transform: rotate(360deg) translateX(140px) translateY(-50%) }
+}
+@keyframes orbit-jupiter {
+    0% { transform: rotate(0deg) translateX(180px) translateY(-50%) }
+    100% { transform: rotate(360deg) translateX(180px) translateY(-50%) }
+}
+@keyframes orbit-saturn {
+    0% { transform: rotate(0deg) translateX(220px) translateY(-50%) }
+    100% { transform: rotate(360deg) translateX(220px) translateY(-50%) }
+}
+@keyframes orbit-uranus {
+    0% { transform: rotate(0deg) translateX(260px) translateY(-50%) }
+    100% { transform: rotate(360deg) translateX(260px) translateY(-50%) }
+}
+@keyframes orbit-neptune {
+    0% { transform: rotate(0deg) translateX(290px) translateY(-50%) }
+    100% { transform: rotate(360deg) translateX(290px) translateY(-50%) }
+}
+.orbit.mercury { width: 100px; height: 100px; }
+.orbit.venus { width: 160px; height: 160px; }
+.orbit.earth { width: 220px; height: 220px; }
+.orbit.mars { width: 280px; height: 280px; }
+.orbit.jupiter { width: 360px; height: 360px; }
+.orbit.saturn { width: 440px; height: 440px; }
+.orbit.uranus { width: 520px; height: 520px; }
+.orbit.neptune { width: 580px; height: 580px; }
+</style>
+<div class="solar-system">
+    <div class="sun"></div>
+    <div class="orbit mercury"></div>
+    <div class="orbit venus"></div>
+    <div class="orbit earth"></div>
+    <div class="orbit mars"></div>
+    <div class="orbit jupiter"></div>
+    <div class="orbit saturn"></div>
+    <div class="orbit uranus"></div>
+    <div class="orbit neptune"></div>
+    <div class="planet mercury"></div>
+    <div class="planet venus"></div>
+    <div class="planet earth"></div>
+    <div class="planet mars"></div>
+    <div class="planet jupiter"></div>
+    <div class="planet saturn"></div>
+    <div class="planet uranus"></div>
+    <div class="planet neptune"></div>
+</div></style>
+
