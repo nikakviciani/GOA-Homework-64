@@ -1,0 +1,57 @@
+<!-- 2) შექმენით ანალოგიური grid-ის განლაგება -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto auto auto auto;
+            gap: 10px;
+            height: 100vh;
+            margin: 0;
+        }
+        .header {
+            grid-column: 1 / span 2;
+            background-color: lightblue;
+            text-align: center;
+            padding: 10px;
+        }
+        .sidebar {
+            grid-row: 2 / span 3;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        .content1 {
+            background-color: lightcoral;
+            padding: 10px;
+        }
+        .content2 {
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+        }
+        .content3 {
+            background-color: lightpink;
+            padding: 10px;
+        }
+        .footer {
+            grid-column: 1 / span 2;
+            background-color: lightgray;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">header </div>
+    <div class="sidebar">sidebar</div>
+    <div class="content1">content1</div>
+    <div class="content2">content2</div>
+    <div class="content3">content3</div>
+    <div class="footer">footer</div>
+</body>
+</html>

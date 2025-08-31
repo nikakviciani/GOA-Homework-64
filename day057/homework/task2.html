@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Grid Layout</title>
+    <style>
+    .grid-container  {
+        display: grid;
+        grid-template-areas:
+        "box5 box5 box5"
+        "box2 box2 box2"
+        "box1 box3 box4"
+        "box6 box7 box8"
+        "box9 box9 box9";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 100px);
+        gap: 10px;
+        padding: 10px;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .grid-container > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        border-radius: 8px;
+    }
+
+    .box1 { grid-area: box1; background-color: lightblue; }
+    .box2 { grid-area: box2; background-color: lightgreen; }
+    .box3 { grid-area: box3; background-color: lightcoral; }
+    .box4 { grid-area: box4; background-color: aquamarine; }
+    .box5 { grid-area: box5; background-color: lightpink; }
+    .box6 { grid-area: box6; background-color: black; }
+    .box7 { grid-area: box7; background-color: lime; }
+    .box8 { grid-area: box8; background-color: yellow; color: black; }
+    .box9 { grid-area: box9; background-color: peru; }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <div class="box5">5</div>
+    <div class="box6">6</div>
+    <div class="box7">7</div>
+    <div class="box8">8</div>
+    <div class="box9">9</div>
+    </div>
+</body>
+</html>

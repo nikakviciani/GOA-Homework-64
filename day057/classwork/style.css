@@ -1,0 +1,44 @@
+.table-container {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    table-layout: fixed;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.table-cell {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.title {
+    background: #333;
+    color: #ffe082;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 80px;
+}
+
+.header,.footer {
+    background: #ffeb3b;
+    color: #333;
+    font-weight: bold;
+    height: 60px;
+}
+
+.aside {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.main {
+    background: #fff;
+    border: 2px dashed #ccc;
+    color: #555;
+}
