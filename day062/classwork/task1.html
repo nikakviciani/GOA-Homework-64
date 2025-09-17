@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(Document)
+
+        console.log(document.body)
+        document.body.style.backgroundColor = 'red'
+        let p = document.body.children.item
+        let myParagraph = document.getElementById('myParagraph')
+        myParagraph.style.color = 'blue'
+    </script>
+    <!-- backgroundus coloris secva -->
+    <!-- saitis bmuli -->
+    <!-- an yvela elementi -->
+    <!-- getelementbyid -->
+    <p id="myParagraph">bhui</p>
+</body>
+</html>
+
+<!-- 2) შექმენით პარაგრაფი საიტზე და ჩაწერეთ რაიმე ტექსტი, შემდეგ წამოიღეთ ეს პარაგრაფი ჯერ მისამართით, შემდეგ კი document.getElementByID მეთოდის გამოყენებით და შეცვალეთ მისი ტექსტი -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myParagraph">old</p>
+    <script>
+        let myParagraph = document.getElementById('myParagraph')
+        myParagraph.textContent = 'new'
+    </script>
+</body>
+</html>
