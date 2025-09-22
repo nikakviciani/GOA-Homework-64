@@ -1,0 +1,47 @@
+<!-- დოკუმენტის ობიექტი ნიშნავს, რომ HTML დოკუმენტი არის ობიექტი, რომელიც შეიცავს სხვადასხვა ელემენტებს, ატრიბუტებს და შინაარსს. -->
+<!-- functopn same like def in pithon -->
+
+<!-- <script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    }
+    myFunction();
+</script> -->
+
+<!-- 1) შექმენით ფუნქცია რომელიც cosole-ში გამოიტანს "Hello World"-ს, შემდეგ შექმენით ფუნქცია რომელიც დააბრუნებს რაიმე რიცხვს, აიღეთ ახალი ფუნქცია და დააბრუნეთ 2 რიცხვის ჯამი და საბოლოოდ ფუნქცია რომელიც არგუმენტად მიიღებს ფერს და კონკრეტულ პარაგრაფს მიანჭებს არგუმენტად გადაცემულ ფერს -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="red" onclick="changeColor('red')">red</p>
+    <p id="blue" onclick="changeColor('blue')">blue</p>
+    <p id="green" onclick="changeColor('green')">green</p>
+    <script>
+        function HelloWorld(){
+            console.log("Hello World");
+        }
+        HelloWorld();
+
+        function returnNumber(){
+            return 42;
+        }
+
+        function addTwoNumbers(a, b){
+            return a + b;
+        }
+
+        function changeColor(color){
+            document.getElementById(color).style.color = color;
+        }
+        console.log(returnNumber());
+        console.log(addTwoNumbers(5, 10));
+
+
+    </script>
+</body>
+</html>
+<!-- return სა და ლოგს შორის განსხვავება ის არის, რომ return მნიშვნელობას აბრუნებს ფუნქციის გამოძახების ადგილას, ხოლო console.log მხოლოდ აჩვენებს მნიშვნელობას კონსოლში. -->
