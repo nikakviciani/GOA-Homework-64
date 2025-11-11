@@ -1,0 +1,26 @@
+<!-- 4) შექმენით ფუნქცია რომელსაც დაარქმევთ even_sum, ამ ფუნქციას ექნება 1 პარამეტრი სახელად border (ზღვარი), ფუნქციამ 0-იდან border-ის ჩათვლით უნდა გაიგოს ყველა რიცხვი if პირობითი განცხადების საშვალებით, ეს ყველა ლუწი რიცხვი უნდა შეკრიბოთ და დააბრუნოთ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function even_sum(border) {
+            let sum = 0;
+            for (let i = 0; i <= border; i++) {
+                if (i % 2 === 0) {
+                    sum += i;
+                }
+            }
+            return sum;
+        }
+
+        // Test the function
+        console.log(even_sum(10)); // Should output: 30 (0 + 2 + 4 + 6 + 8 + 10)
+        console.log(even_sum(15)); // Should output: 56 (0 + 2 + 4 + 6 + 8 + 10 + 12 + 14)
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- 3) დაბრუნებული მასივი გადაეცით ფუნქციას რომელსაც დაარქმევთ calculateAverage ამ ფუნქციაში გამოითვლით იმ რიცხვების საშუალოს რომელიც მოთავსებულია სიაში, მიღებული საშუალო დააბრუნეთ ფუნქციიდან -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getNumbersBetween(start, end) {
+            let numbers = [];
+            for (let i = start; i <= end; i++) {
+                numbers.push(i);
+            }
+            return numbers;
+        }
+
+        function calculateAverage(numbers) {
+            let sum = 0;
+            for (let num of numbers) {
+                sum += num;
+            }
+            return sum / numbers.length;
+        }
+
+        // Test the functions
+        const numbersArray = getNumbersBetween(1, 5); // [1, 2, 3, 4, 5]
+        const average = calculateAverage(numbersArray);
+        console.log("Numbers:", numbersArray); // Should output: [1, 2, 3, 4, 5]
+        console.log("Average:", average); // Should output: 3
+    </script>
+</body>
+</html>

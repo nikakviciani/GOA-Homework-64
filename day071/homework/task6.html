@@ -1,0 +1,20 @@
+<!-- 7) შექმენით ფუნქცია სახელად manualSlice რომელსაც გადაეცემა პირველი მასივი და ორი რიცხვი საწყისის ინდექსი და დასასრულის ინდექსი, თქვენი დავალებაა გადმოცემული ინდექსიდან მეორე ინდექსამდე ჩამოაჭრათ სიას ნაწილიდა დააბრუნოთ ფუნქციიდან გამოიყენეთ for ციკლი -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let manualSlice = function(array, startIndex, endIndex) {
+            let slicedArray = [];
+            for (let i = startIndex; i < endIndex; i++) {
+                slicedArray.push(array[i]);
+            }
+            return slicedArray;
+        };
+    </script>
+</body>
+</html>

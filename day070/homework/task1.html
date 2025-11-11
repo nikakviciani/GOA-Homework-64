@@ -1,0 +1,25 @@
+<!-- 2) შექმენით for ციკლი რომლითაც გაიგებთ რიცხვებს 0-იდან 10-ის ჩათვლით, თქვენი, დავალებაა მასივში დაამატოთ ობიექტი, ობიექტში უნდა გქონდეთ 2 კუთვნილება, პირველი value (რიცხვი), მეორე type (აქ გაუწერთ ლუწია თუ კენტი) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbersArray = [];
+
+        for (let i = 0; i <= 10; i++) {
+            let numberType = (i % 2 === 0) ? 'ლუწი' : 'კენტი';
+            let numberObject = {
+                value: i,
+                type: numberType
+            };
+            numbersArray.push(numberObject);
+        }
+
+        console.log(numbersArray);
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!-- 5) შექმენით car ობიექტის კონსტრუქტორი რომელსაც ექნება 5 კუთვნილება: brand, model, year, mileage, drive (მეთოდი), drive მეთოდმა უნდა გაზარდოს mileage 100-ით ყოველი გამოძახებისას, შექმენით მინიმუმ 3 ობიექტი და თითოეულზე გამოიძახეთ drive მეთოდი ორჯერ, კომენტარით ახსენით რა არის ობიექტი და როგორ იქმნება ის კონსტრუქტორით -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ობიექტი არის მონაცემთა სტრუქტურა, რომელიც შეიცავს თვისებებს (properties) და მეთოდებს (methods).
+        // კონსტრუქტორი არის სპეციალური ფუნქცია, რომელიც გამოიყენება ობიექტების შექმნისთვის და მათი საწყისი მნიშვნელობების განსაზღვრისთვის.
+
+        function Car(brand, model, year, mileage) {
+            this.brand = brand;
+            this.model = model;
+            this.year = year;
+            this.mileage = mileage;
+
+            this.drive = function() {
+                this.mileage += 100;
+            };
+        }
+
+        // ობიექტების შექმნა კონსტრუქტორის გამოყენებით
+        const car1 = new Car('Toyota', 'Corolla', 2020, 15000);
+        const car2 = new Car('Honda', 'Civic', 2019, 20000);
+        const car3 = new Car('Ford', 'Focus', 2018, 25000);
+
+        // drive მეთოდის გამოძახება ორჯერ თითოეულ ობიექტზე
+        car1.drive();
+        car1.drive();
+        console.log(`${car1.brand} ${car1.model} mileage: ${car1.mileage}`); // 15200
+
+        car2.drive();
+        car2.drive();
+        console.log(`${car2.brand} ${car2.model} mileage: ${car2.mileage}`); // 20200
+
+        car3.drive();
+        car3.drive();
+        console.log(`${car3.brand} ${car3.model} mileage: ${car3.mileage}`); // 25200
+    </script>
+</body>
+</html>

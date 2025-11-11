@@ -1,0 +1,29 @@
+<!-- 3) შექმენით student ობიექტის კონსტრუქტორი რომელსაც ექნება 5 კუთვნილება: name, age, grade, active, promote (მეთოდი), შექმენით მინიმუმ 3 ობიექტი და თითოეულზე გამოიძახეთ promote მეთოდი, საბოლოოდ გამოიტანეთ ყველა ობიექტი, კომენტარით ახსენით რა არის მეთოდი და რა განსხვავებაა property-სა და method-ს შორის -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Student = function(name, age, grade, active) {
+            this.name = name;       // Property: Student's name
+            this.age = age;         // Property: Student's age
+            this.grade = grade;     // Property: Student's grade
+            this.active = active;   // Property: Is the student active
+
+            // Method: promote - increases the student's grade by 1
+            this.promote = function() {
+                if (this.active) {
+                    this.grade += 1;
+                    console.log(this.name + " has been promoted to grade " + this.grade);
+                } else {
+                    console.log(this.name + " is not active and cannot be promoted.");
+                }
+            };
+        };
+    </script>
+</body>
+</html>

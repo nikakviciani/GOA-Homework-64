@@ -1,0 +1,22 @@
+<!-- 2) შექმენით ფუნქცია რომელსაც გადაეცემა 2 რიცხვი, start - end, თქვენი მოვალეობაა ამ რიცხვებს შორის ყველა რიცხვის გაგება და მასივში შეტანა, საბოლოოდ დააბრუნეთ მასივი -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Numbers Between Range</title>
+</head>
+<body>
+    <script>
+        function getNumbersBetween(start, end) {
+            let numbers = [];
+            for (let i = start; i <= end; i++) {
+                numbers.push(i);
+            }
+            return numbers;
+        }
+
+        // Test the function
+        console.log(getNumbersBetween(1, 5)); // Should output: [1, 2, 3, 4, 5]
+        console.log(getNumbersBetween(3, 7)); // Should output: [3, 4, 5, 6, 7]
+    </script>
+</body>
+</html>

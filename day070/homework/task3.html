@@ -1,0 +1,47 @@
+<!-- 4) შექმენით book ობიექტის კონსტრუქტორი რომელსაც ექნება 4 კუთვნილება: title, author, year, available, toggleAvailability (მეთოდი), შექმენით მინიმუმ 2 ობიექტი და შეამოწმეთ მეთოდის მუშაობა, კომენტარით ახსენით რა არის constructor და რისთვის გამოიყენება -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Constructor function for creating Book objects
+        function Book(title, author, year, available) {
+            this.title = title;           // Title of the book
+            this.author = author;         // Author of the book
+            this.year = year;             // Publication year of the book
+            this.available = available;   // Availability status of the book
+
+            // Method to toggle the availability status of the book
+            this.toggleAvailability = function() {
+                this.available = !this.available;
+            };
+        }
+
+        // Creating two Book objects
+        const book1 = new Book("1984", "George Orwell", 1949, true);
+        const book2 = new Book("To Kill a Mockingbird", "Harper Lee", 1960, false);
+
+        // Checking the availability before toggling
+        console.log(`${book1.title} available: ${book1.available}`); // true
+        console.log(`${book2.title} available: ${book2.available}`); // false
+
+        // Toggling availability
+        book1.toggleAvailability();
+        book2.toggleAvailability();
+
+        // Checking the availability after toggling
+        console.log(`${book1.title} available: ${book1.available}`); // false
+        console.log(`${book2.title} available: ${book2.available}`); // true
+
+        /*
+        A constructor is a special function used to create and initialize objects. 
+        It allows us to define properties and methods that will be shared by all instances of the object. 
+        In this case, the Book constructor is used to create book objects with specific attributes and a method to toggle their availability.
+        */
+    </script>
+</body>
+</html>

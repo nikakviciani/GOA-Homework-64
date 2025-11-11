@@ -1,0 +1,25 @@
+<!-- 16) შექმენით ფუნქცია რომელიც მიიღებს მასივს და დაითვლის რამდენი ლუწი რიცხვია მასში -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        function countEvenNumbers(arr) {
+            let evenCount = 0;
+
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] % 2 === 0) {
+                    evenCount++;
+                }
+            }
+
+            return evenCount;
+        }
+    </script>
+</body>
+</html>
